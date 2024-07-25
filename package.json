@@ -1,0 +1,36 @@
+{
+  "name": "workshop-logistic",
+  "version": "1.0.0",
+  "description": "\"Welcome to the Node.js Logistics Management workshop. This project is designed to apply basic concepts of Node.js, Express, promises, and the difference between development and production dependencies. You will create a RESTful API that interacts with the file system instead of a database.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pulgarino222/nodejs-logistics-project.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "javascript",
+    "express"
+  ],
+  "author": "juan felipe pulgarin hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pulgarino222/nodejs-logistics-project/issues"
+  },
+  "homepage": "https://github.com/pulgarino222/nodejs-logistics-project#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },"type":"module"
+}
