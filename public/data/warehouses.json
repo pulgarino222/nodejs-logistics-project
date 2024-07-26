@@ -1,8 +1,7 @@
 [
   {
     "id": 1,
-    "item": "tv samsug",
-    "quantity": 2,
-    "whareHouseId": 3
+    "name": "exito_editadoo",
+    "location": "antioquia"
   }
 ]

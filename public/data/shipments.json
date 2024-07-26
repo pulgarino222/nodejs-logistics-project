@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": 1,
+    "item": "audifonos",
+    "quantity": 150,
+    "whareHouseId": 2
+  },
+  {
+    "id": 2,
+    "item": "tv samsung",
+    "quantity": 100,
+    "warehouseId": 1
+  }
+]

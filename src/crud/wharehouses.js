@@ -11,7 +11,7 @@ routerWarehouses.post('/',(req,resp)=>{
         location:req.body.location
     }
     wharehouses.push(newWharehouses)
-    writeFiles(wharehouses)
+    writeFiles(wharehouses,whareHouseFilePath)
     try {
         resp.status(201).json({"message": "wharehouses added successfully", "wharehouses": newWharehouses})
     } catch (error) {
@@ -45,7 +45,7 @@ routerWarehouses.put('/:id',(req,resp)=>{
         location:req.body.location
     }
     wharehouses[editedWharehouse]=updateWharhouse
-    writeFiles(wharehouses)
+    writeFiles(wharehouses,whareHouseFilePath)
     resp.status(200).send(`wharehouse update successfully ${JSON.stringify(updateWharhouse)}`)
 })
 
@@ -56,7 +56,7 @@ routerWarehouses.delete('/:id',(req,resp)=>{
         return resp.status(404).send("warehouse to delete is wrong")
     }
     wharehouses.splice(DeleteWharehouses,1)
-    writeFiles(wharehouses)
+    writeFiles(wharehouses,whareHouseFilePath)
     resp.status(200).send("wharehouse was deleted")
 
 })

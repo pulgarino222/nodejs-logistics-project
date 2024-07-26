@@ -26,12 +26,12 @@ export const readFiles = (routNecesary) => {
 };
 
 // Función para escribir archivos JSON
-export const writeFiles = (fileThatWasReading) => {
-    fs.writeFileSync(whareHouseFilePath, JSON.stringify(fileThatWasReading, null, 2));
+export const writeFiles = (fileThatWasReading,routNecesary) => {
+    fs.writeFileSync(routNecesary, JSON.stringify(fileThatWasReading, null, 2));
 };
 
-// Prueba de lectura de archivo
-console.log(readFiles(whareHouseFilePath));
+
+
 
 
 // const readFileAnimes=()=>{
